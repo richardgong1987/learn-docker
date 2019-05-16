@@ -19,7 +19,7 @@ echo export JRE_HOME=/usr/lib/jdk/jdk1.8.0_211/jre >> ~/.bashrc
 
 echo export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib >> ~/.bashrc
 
-echo export PATH=${JAVA_HOME}/bin:$PATH >> ~/.bashrc
+
 
 ## install maven
 
@@ -33,15 +33,15 @@ echo export M2_HOME=`pwd`/apache-maven-3.6.1 >> ~/.bashrc
 
 . ~/.bashrc
 
-echo export PATH=`pwd`M2_HOME:$PATH >> ~/.bashrc
+echo export PATH=${M2_HOME}/bin:${JAVA_HOME}/bin:$PATH >> ~/.bashrc
 
+. ~/.bashrc
+
+. ~/.bashrc
 
 . ~/.bashrc
 
 
-## install mysql 5.7 https://dev.mysql.com/doc/refman/5.7/en/linux-installation.html
-## on ubuntu
-sudo apt-get install mysql-server -y
-sudo apt install mysql-client -y
-sudo apt install libmysqlclient-dev -y
+
+
 
