@@ -30,9 +30,9 @@ tar -xzvf apache-maven-3.6.3-bin.tar.gz
 
 echo export M2_HOME=`pwd`/apache-maven-3.6.3 >> ~/.zshrc
 
-echo export PATH='${M2_HOME}'/bin:'${JAVA_HOME}'/bin:$PATH >> ~/.zshrc
+echo export PATH='${M2_HOME}'/bin:'${JAVA_HOME}'/bin:'$PATH' >> ~/.zshrc
 
 echo export CLASSPATH=.:'${JAVA_HOME}'/lib:'${JRE_HOME}'/lib >> ~/.zshrc
 
-. ~/.zshrc
+
 
