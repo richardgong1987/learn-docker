@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 
 ## wget http://mirror.bit.edu.cn/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
-## 下载好apache-maven-3.6.3和jdk-8u231-linux-x64.tar.gz上传到服务器
+## 下载好apache-maven-3.6.3和jdk-8u251-linux-x64.tar.gz上传到服务器
 
 ## install JDK
 
-tar -xzvf jdk-8u231-linux-x64.tar.gz
+tar -xzvf jdk-8u251-linux-x64.tar.gz
 
 mkdir /usr/lib/jdk
 
-mv jdk1.8.0_231 /usr/lib/jdk
+mv jdk1.8.0_251 /usr/lib/jdk
 
-echo export JAVA_HOME=/usr/lib/jdk/jdk1.8.0_231 >> ~/.zshrc
+echo export JAVA_HOME=/usr/lib/jdk/jdk1.8.0_251 >> ~/.zshrc
 
-echo export JRE_HOME=/usr/lib/jdk/jdk1.8.0_231/jre >> ~/.zshrc
+echo export JRE_HOME=/usr/lib/jdk/jdk1.8.0_251/jre >> ~/.zshrc
 
 
 
